@@ -1,0 +1,320 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Calibri;
+}
+button{
+    cursor: pointer;
+}
+.header {
+    width: 100%;
+    padding: 30px 70px 30px 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+.navlink {
+    color: rgb(10, 10, 134);
+    padding: 15px;
+    border-radius: 5px;
+    transition: 300ms;
+}
+.header ul{
+    display: flex;
+    align-items: center;
+}
+.header ul li{
+    padding: 5px;
+}
+.navlink:hover{
+    background-color: rgb(10, 10, 134) ;
+    color: white;
+
+}
+.header .button{
+    border: 1px solid gold;
+    background-color: gold;
+    color: white;
+    padding: 14px 22px;
+    border-radius: 6px;
+}
+
+.section-1{
+    text-align: center;
+    padding-top: 100px;
+    color: rgb(10, 10, 134);
+    background: linear-gradient(white,pink,white,white,white) ;
+}
+.section-1 h1{
+    font-size: 56px;
+}
+.section-1 h1 span{
+    text-decoration: underline gold;
+    text-decoration-thickness: 10px;
+    
+}
+.section-1 p{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.section-1 button{
+    padding:20px 40px;
+    background-color: rgb(3, 3, 109);
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    border:none;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.section-1 button::after{
+    content: '';
+    width: 100%;height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: gold;
+    color: white;
+    border-radius: 5px;
+    transform: translateY(-100%);
+    z-index: -1;
+    transition: 500ms;
+}
+.section-1 button:hover::after{
+    transform: translateY(0%);
+}
+#background{
+    width: 100%;
+    position: relative;
+}
+#car{
+    position: absolute;
+    bottom: -40%;
+    left: 20%;
+    animation-name: action;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+}
+@keyframes action {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(100px);
+    }
+}
+
+.section-2{
+    width: 100%;
+    padding: 90px 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 22px;
+}
+.section-2 h6{
+    color: rgb(122, 122, 230);
+    padding-bottom: 10px;
+}
+.section-2 h2{
+    color: rgb(6, 6, 99);
+}
+.section-2 p{
+    padding: 40px 0px;
+    color: grey;
+}
+.section-2 button{
+    padding:20px 40px;
+    background-color: gold;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    border:none;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.section-2 button::after{
+    content: '';
+    width: 100%;height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(5, 5, 78);
+    color: white;
+    border-radius: 5px;
+    transform: translateY(-100%);
+    z-index: -1;
+    transition: 500ms;
+}
+.section-2 button:hover::after{
+    transform: translateY(0%);
+}
+.footer{
+    width: 100%;
+    background-color: rgb(4, 4, 105);
+    padding: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer h6{
+    color: white;
+    font-size: 18px;
+    padding-bottom: 35px;
+}
+.footer h5{
+    color: gold;
+    font-size: 20px;
+}
+.footer p, .footer li{
+    color: rgb(163, 158, 158);
+}
+.footer p{
+    padding-top:20px;padding-bottom: 20px;
+}
+.footer i{
+    color: white;
+    padding: 10px;
+    font-size: 22px;
+}
+.footer ul{
+    padding: 0;
+    margin:0;
+}
+.footer li{
+    padding-bottom: 10px;
+}
+
+/* ----------------------------SECTION-3---------------------------*/
+
+.section-3{
+    width: 100%; 
+    background-image: url('./images/background1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 100px 200px;
+    text-align: center;
+    font-size: 20px;
+}
+.section-3 .long-text{
+    margin: 40px 0px;
+}
+.section-3 .ceo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.section-3 .ceo img{
+    margin-right: 15px;
+}
+.section-3 h2{
+    font-size: 40px;
+}
+
+/* ----------------------------------- FAQ -----------------------------*/
+
+.faq{
+    padding: 100px;
+    text-align: center;
+}
+
+.faq .part{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+.part label{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 50px;
+    border-bottom: 1px solid rgba(163, 160, 160, 0.315);
+    font-size: 18px;
+    padding-top: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.part input{
+    display: none;
+}
+.part .content {
+    display: none;
+}
+.part input:checked + label + .content{
+    display: block;
+}
+.part label::after{
+    content: '+';
+    position: absolute;
+    width: 50px;
+    color:blue;
+    transform: translateX(-80%);
+    font-size: 18px;
+}
+.part input:checked + label::after{
+    content: '-';
+}
+.part li {
+    margin-bottom: 25px;
+    
+}
+.faq button{
+    padding:20px 40px;
+    background-color: gold;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    border:none;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    font-weight: bold;
+}
+.faq button::after{
+    content: '';
+    width: 100%;height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(5, 5, 78);
+    color: white;
+    border-radius: 5px;
+    transform: translateY(-100%);
+    z-index: -1;
+    transition: 500ms;
+}
+.faq button:hover::after{
+    transform: translateY(0%);
+    color: white;
+}
+
+
+/* -----------------------------CONTACT---------------------------*/
+
+.contact-main, .about, .blog, .events{
+    width: 100%;height: 350px;
+    background-image: url("./images/contact.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding-top: 120px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
